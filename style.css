@@ -1,120 +1,193 @@
-/*
-===========================================================
-						FONTE
-===========================================================
-*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/*==================================================
+					fonte
+====================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* 
-==========================================================
-	CSS RESET	
-	http://meyerweb.com/eric/tools/css/reset/ 
-	v2.0 | 20110126
-	License: none (public domain)
-==========================================================
-*/html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/*=================================================  
+             CSS reset
+    http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+===================================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-/*======================================
-                GERAL 
-========================================
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
+body{
+    margin: 4vw 13vw 4vw 18vw;
+    
 }
 
-/*
-========================================
-            TOPO
-========================================
-*/
-header p a {
-  color: black;
-  margin: 0 9vw 0 9vw;
+
+/*======================================================================
+                                TOPO
+=======================================================================*/
+header nav ul{
+    display: flex;
 }
-header p span {
-  font-weight: bold;
+header nav ul li p{
+    margin: 0 30vw 4vw 0;
+    color: #232323;
 }
-a {
-  text-decoration: none;
+header nav ul li a{
+    color: #868686;
+    text-decoration: none;
+    padding: 0 50px 0 0;
 }
-header nav ul li a span {
-  font-weight: bold;
+header nav ul li a.link1{
+    color: #232323;
+    
 }
-body header {
-  display: flex;
-  justify-content: space-between;
-  padding: 6vw 1vw 6vw 1vw;
+header nav ul li p span.danny{
+    font-weight: bold;
 }
-header nav ul {
-  display: flex;
+/*======================================================================
+                                CONTEUDO
+=======================================================================*/
+main section.banner div h1{
+    font-size: 3.5rem;
+    margin: 2vw 3vw 0 0;
+    font-family: Playfair Display;
+    font-weight: bolder;
 }
-header nav ul li a {
-  color: black;
-  margin: 1vw 2.5vw 1vw 2.5vw;
+main section.banner div h1 span{
+    color: #47C183;
 }
-header nav ul li strong {
-  font-weight: bold;
+main section.banner div p{
+    font-size: 20px;
+    margin: 2.8vw 8vw 4.1vw 0;
 }
-/*====================================
-            CONTEÚDO - BOOKS
-======================================
-*/
-section div h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 5vw 10vw 5vw 10vw;
+main section.banner div button{
+    padding: 1.3vw 2.5vw 1.3vw 2.5vw;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #232323;
+    font-size: 15px;
+    border: none;
 }
-section div h1 span {
-  color: green;
+main section.banner div a{
+    color: #000000;
+    margin: 0 0 0 2.2vw;
 }
-section div.div1 {
-display: flex;
+main section.banner {
+    display: flex;
 }
-section p {
-  font-size: 1.2rem
+main section.banner div img{
+    margin: 0 10vw 0 0;
+} 
+
+main section h2{
+    text-align: center;
+    font-size: 20px;
+    color: #232323;
+    font-weight: bolder;
+    margin: 2.5vw 10vw 2.5vw 0;
 }
-.title {
-  font-family: 'Playfair Display', 'Times New Roman', Times, serif
+main section.conteudo div{
+    display: flex;
+    margin: 1.5vw 0 1.5vw 2vw;
+}
+main section.conteudo div p{
+    color: #232323;
+    margin: 3vw 18vw 5vw 4vw;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+main section.conteudo div img{
+    max-width: 206px;
+    max-height: 206px;
+}
+main section.conteudo div.pessoas p{
+    margin: 2vw 2vw 0 3vw;
+}
+main section.conteudo div.pessoas img{
+    margin: 0 17vw 0 2vw;
+}
+
+main section.tabela h2{
+    text-align: center;
+    font-size: 20px;
+    color: #232323;
+    font-weight: bolder;
+    margin: 4.5vw 9vw 4vw 0;
+}
+main section.tabela div.div1 div p{
+    line-height: 1.8;
+    margin: 1.5vw 3vw 0 4vw;
+    color: #232323;
+    font-size: 1.1rem;
+}
+main section.tabela div.div1 div p.paragrafo2{
+    margin: 1.3vw 3vw 0 4vw;
+    font-size: 1.1rem;
+}
+main section.tabela div p span{
+    font-weight: bolder;
+}
+main section.tabela div.div1{
+    display: flex;
+}
+main section.tabela div.div1 div img{
+    margin: 0 13vw 0 0;
+}
+/*======================================================================
+                                RODAPÈ
+=======================================================================*/
+footer nav ul li p.Story{
+    margin: 8vw 0 0 0vw;
+}
+footer nav ul li{
+    margin: 15px 0 0 0;
+    color: #232323;
+}
+footer{
+    display: flex;
+}
+footer nav.links ul{
+    display: flex;
+    margin: 7.15vw 0 0 19vw;
+}
+footer nav.links ul li a{
+    padding: 0 40px 0 0;
+    color: #868686;
 }
